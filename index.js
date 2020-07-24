@@ -4,7 +4,7 @@ var ssh = new Client();
 const express = require('express');
 const app = express();
 app.use(express.json());
-const cors = requre('cors');
+const cors = require('cors');
 app.use(cors());
 /* db connection*/
 var db = new Promise(function (resolve, reject) {
@@ -27,7 +27,8 @@ var db = new Promise(function (resolve, reject) {
                     reject(err);
                 }
             });
-            app.listen(3000, () => console.log('listening on port 3000....'));
+            const PORT = process.env.PORT || 8080
+            app.listen(PORT, console.log(`Server running on port ${PORT}`));
             /* get request for all jobs*/
             app.get('/api/yuganthi', (req, res) => {
                 db.query('select * from questions', (err, rows, fields) => {
