@@ -1,0 +1,25 @@
+{
+  "name": "quiz_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuganthiKrishnamurthy/quiz_backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuganthiKrishnamurthy/quiz_backend/issues"
+  },
+  "homepage": "https://github.com/YuganthiKrishnamurthy/quiz_backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "mysql2": "^2.1.0",
+    "ssh2": "^0.8.9"
+  }
+}
