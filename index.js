@@ -4,6 +4,8 @@ var ssh = new Client();
 const express = require('express');
 const app = express();
 app.use(express.json());
+const cors = requre('cors');
+app.use(cors());
 /* db connection*/
 var db = new Promise(function (resolve, reject) {
     ssh.on('ready', () => {
