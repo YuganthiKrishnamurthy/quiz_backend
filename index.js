@@ -49,6 +49,7 @@ var db = new Promise(function (resolve, reject) {
                             for(var i in strLines) {
                                 var obj = JSON.parse(strLines[i]);
                                 obj.id = parseInt(obj.id)
+                                obj.isChecked=false;
                                 question.options.push(obj)
                             }
                             questionSet.push(question)
